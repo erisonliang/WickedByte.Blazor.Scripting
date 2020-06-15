@@ -5,6 +5,11 @@ VisualStudioVersion = 16.0.30204.135
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WickedByte.Blazor.Scripting", "WickedByte.Blazor.Scripting\WickedByte.Blazor.Scripting.csproj", "{051B2C53-59DE-45D6-8B28-45718334C5CE}"
 EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Assets", "Assets", "{AE468086-1B3D-416B-9D40-156B4C081D74}"
+	ProjectSection(SolutionItems) = preProject
+		Assets\wickedbyte.png = Assets\wickedbyte.png
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
