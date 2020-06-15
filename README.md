@@ -7,7 +7,7 @@ Enable dynamic loading of Javascript and CSS files in Blazor client projects. Av
 ## Installation
 Use the Nuget package manager to install WickedByte.Blazor.Scripting
   
-##Usage
+## Usage
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
