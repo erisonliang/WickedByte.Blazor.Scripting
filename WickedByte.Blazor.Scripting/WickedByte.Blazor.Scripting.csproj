@@ -18,6 +18,7 @@
 	  <FileVersion>1.0.1.0</FileVersion>
 	  <PackageReleaseNotes>Enhanced configuration API &amp; bugfixes.</PackageReleaseNotes>
 	  <PackageIcon>wickedbyte.png</PackageIcon>
+	  <Version>1.0.1</Version>
   </PropertyGroup>
 
   <ItemGroup>
