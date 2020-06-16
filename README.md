@@ -2,7 +2,7 @@
 Loads scripts and css dynamically in Blazor webassembly apps.
 
 ## Description
-In the dotnet Blazor webassembly templates, you typically have to add 'link' and 'script' tags statically by editing `Index.html` every time you use a 3rd party component library. This library enables you to load Javascript and css at runtime, or configure what you want to load at startup via dependency injection by calling `builder.Services.AddScripts()` in `Program.Main()`, without having to edit `Index.html`.
+In the dotnet Blazor webassembly templates, you typically have to add '`link`' and '`script`' tags statically by editing `Index.html` every time you use a 3rd party component library. This library enables you to load Javascript and css at runtime, or configure what you want to load at startup via dependency injection by calling `builder.Services.AddScripts()` in `Program.Main()`, without having to edit `Index.html`.
 
 You can create component libraries that automatically insert related scripts and css at startup via `Script` attributes.
 
@@ -21,17 +21,17 @@ Use the Nuget package manager to install `WickedByte.Blazor.Scripting`.
 
 ## Script Loading via ScriptAttribute
 
-You can decorate any of your classes or interfaces with the `[Script(Path='path to my script')]` attribute. When you call `IServiceCollection.AddScripts()` without any parameters, your assembly will be reflected for classes and interfaces that are decorated with the `[Script]` attribute, and the associated paths will be loaded when you first call `IScriptLoader.LoadAll()`. 
+You can decorate any of your classes or interfaces with the `[Script(Path='path to my script')]` attribute. When you call `IServiceCollection.AddScripts()` without any parameters, your assembly will be reflected for classes and interfaces that are decorated with the `[Script]` attribute, and the associated paths will be loaded when you first call `IScriptLoader.LoadAll()`.
 
 Similarly, you can also call `IServiceCollection.AddScripts( config => config.Add( IEnumerable<Type | Assembly> items )  )` to cause other types or assemblies to be reflected for `[Script]` attributes. The associated paths will be loaded when you first call `IScriptLoader.LoadAll()`. 
 
-If the [Script] attribute is applied to a class or interface without specifying a value for `Path`, then the associated script will be found by convention using the path `"_content/[class namespace]/[class name].js"`. For example,
+If the `[Script]` attribute is applied to a class or interface without specifying a value for `Path`, then the associated script will be found by convention using the path `"_content/[class namespace]/[class name].js"`. For example,
 
-`namespace WickedByte.Blazor{`
-
-​	`[Script] class MyExample{}`
-
-`}`
+```
+`namespace WickedByte.Blazor{
+	[Script] class MyExample{}
+}`
+```
 
 would automatically be associated with the script path `"_content/WickedByte.Blazor/MyExample.js"`.
 
