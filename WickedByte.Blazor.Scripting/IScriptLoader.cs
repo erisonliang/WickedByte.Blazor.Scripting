@@ -76,6 +76,7 @@ namespace WickedByte.Blazor.Scripting
 			foreach( var assembly in assemblies )
 				AddScripts( assembly );
 		}
+
 		public async Task Load( string path )
 		{
 			var script = path.ToLower();

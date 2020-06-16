@@ -14,11 +14,11 @@
 	  <RepositoryType>git</RepositoryType>
 	  <PackageProjectUrl>https://marshallr12.github.io/WickedByte.Blazor.Scripting/</PackageProjectUrl>
 	  <GeneratePackageOnBuild>true</GeneratePackageOnBuild>
-	  <AssemblyVersion>1.0.1.0</AssemblyVersion>
-	  <FileVersion>1.0.1.0</FileVersion>
-	  <PackageReleaseNotes>Enhanced configuration API &amp; bugfixes.</PackageReleaseNotes>
+	  <AssemblyVersion>1.0.2.0</AssemblyVersion>
+	  <FileVersion>1.0.2.0</FileVersion>
+	  <PackageReleaseNotes>Overload the IScriptLoaderConfiguration.Add() method. Additional README.md documentation.</PackageReleaseNotes>
 	  <PackageIcon>wickedbyte.png</PackageIcon>
-	  <Version>1.0.1</Version>
+	  <Version>1.0.2</Version>
   </PropertyGroup>
 
   <ItemGroup>

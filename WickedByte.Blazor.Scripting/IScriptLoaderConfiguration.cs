@@ -12,29 +12,29 @@ namespace WickedByte.Blazor.Scripting
 		/// <summary>
 		/// Adds types whose scripts / css will be loaded into the web page.
 		/// </summary>
-		void AddTypes( IEnumerable<Type> types );
+		void Add( IEnumerable<Type> types );
 
 		/// <summary>
 		/// Adds types whose scripts / css will be loaded into the web page.
 		/// </summary>
-		void AddTypes( params Type[] types );
+		void Add( params Type[] types );
 
 		/// <summary>
 		/// Adds paths whose scripts / css will be loaded into the web page.
 		/// </summary>
-		void AddPaths( IEnumerable<string> paths );
+		void Add( IEnumerable<string> paths );
 		/// <summary>
 		/// Adds paths whose scripts / css will be loaded into the web page.
 		/// </summary>
-		void AddPaths( params string[] paths );
+		void Add( params string[] paths );
 		/// <summary>
 		/// Adds assemblies that will be interrogated for the <see cref="ScriptAttribute"/>.
 		/// </summary>
-		void AddAssemblies( IEnumerable<Assembly> assemblies );
+		void Add( IEnumerable<Assembly> assemblies );
 		/// <summary>
 		/// Adds assemblies that will be interrogated for the <see cref="ScriptAttribute"/>.
 		/// </summary>
-		void AddAssemblies( params Assembly[] assemblies );
+		void Add( params Assembly[] assemblies );
 	}
 
 	/// <summary>
@@ -46,22 +46,22 @@ namespace WickedByte.Blazor.Scripting
 		public List<string> Paths { get; } = new List<string>();
 		public List<Assembly> Assemblies { get; } = new List<Assembly>();
 
-		public void AddTypes( IEnumerable<Type> types )
+		public void Add( IEnumerable<Type> types )
 			=> Types.AddRange( types );
 
-		public void AddTypes( params Type[] types )
+		public void Add( params Type[] types )
 			=> Types.AddRange( types );
 
-		public void AddPaths( IEnumerable<string> paths )
+		public void Add( IEnumerable<string> paths )
 			=> Paths.AddRange( paths );
 
-		public void AddPaths( params string[] paths )
+		public void Add( params string[] paths )
 			=> Paths.AddRange( paths );
 
-		public void AddAssemblies( IEnumerable<Assembly> assemblies )
+		public void Add( IEnumerable<Assembly> assemblies )
 			=> Assemblies.AddRange( assemblies );
 
-		public void AddAssemblies( params Assembly[] assemblies )
+		public void Add( params Assembly[] assemblies )
 			=> Assemblies.AddRange( assemblies );
 
 		public void AddScripts( ScriptLoader loader )
