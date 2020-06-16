@@ -2,7 +2,7 @@
 Loads scripts and css dynamically in Blazor webassembly apps.
 
 ## Description
-In the dotnet Blazor webassembly templates, you typically have to add <link> and <script> tags statically by editing `Index.html` every time you use a 3rd party component library. This library enables you to load Javascript and css at runtime, or configure what you want to load at startup via dependency injection by calling `builder.Services.AddScripts()` in `Program.Main()`, without having to edit `Index.html`.
+In the dotnet Blazor webassembly templates, you typically have to add 'link' and 'script' tags statically by editing `Index.html` every time you use a 3rd party component library. This library enables you to load Javascript and css at runtime, or configure what you want to load at startup via dependency injection by calling `builder.Services.AddScripts()` in `Program.Main()`, without having to edit `Index.html`.
 
 You can create component libraries that automatically insert related scripts and css at startup via `Script` attributes.
 
@@ -27,11 +27,11 @@ Similarly, you can also call `IServiceCollection.AddScripts( config => config.Ad
 
 If the [Script] attribute is applied to a class or interface without specifying a value for `Path`, then the associated script will be found by convention using the path `"_content/[class namespace]/[class name].js"`. For example,
 
-namespace WickedByte.Blazor{
+`namespace WickedByte.Blazor{`
 
-​	[Script] class MyExample{}
+​	`[Script] class MyExample{}`
 
-}
+`}`
 
 would automatically be associated with the script path `"_content/WickedByte.Blazor/MyExample.js"`.
 
